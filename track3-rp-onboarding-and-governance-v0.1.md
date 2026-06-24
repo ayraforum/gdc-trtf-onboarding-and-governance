@@ -35,6 +35,25 @@ Ayra context and synthesis consulted:
 - Ayra's Track 3 scope notes for GDC 2026, including the current boundary that Track 3 is about RP/verifier authorization for government-issued identity, while issuer authorization is out of scope.
 - Ayra meeting notes and knowledge-base material on trust registries, verifier authorization, wallet-side checks, registry-of-registries patterns, and member experience with trust infrastructure.
 
+## Design Posture
+
+This draft is intentionally operational, but it should remain implementation-neutral and ecosystem-neutral. It is not intended to require one governance model, one technology stack, or one operator.
+
+The working posture is:
+
+- Scoped authorization, not blanket trust: registration should say what a verifier is allowed to request, for which purpose, under which conditions.
+- Transparency over hidden governance: participants should be able to understand who admitted a verifier, under what rules, and how status can change.
+- Privacy and non-correlation by design: verifier checks should not become a transaction-surveillance layer or hidden phone-home mechanism.
+- Ecosystem sovereignty: different ecosystems may satisfy requirements through their own laws, policies, standards, or governance frameworks, provided the result is visible and checkable.
+- Conformance and evidence over self-asserted legitimacy: technical ability to make a request is not enough; the verifier needs a governance basis for making that request.
+- Implementation neutrality: this framework should define the questions and minimum surfaces, while leaving wire formats, APIs, and certification machinery to the appropriate technical and governance work.
+
+## Relationship to Operational Profiles
+
+This framework defines the questions a relying-party / verifier onboarding model should answer. It does not need to contain every operational answer for every credential type or jurisdiction.
+
+A separate operational profile can make the framework concrete for a specific use case. For example, [Government-Issued Identity RP Profile Draft](government-issued-identity-rp-profile-draft.md) sketches one possible profile for relying parties and verifiers that want to consume government-issued identity credentials. That profile is a strawman example, not a GDC decision and not an Ayra governance framework. Its purpose is to make the discussion more concrete so the group can decide what to keep, remove, simplify, or defer.
+
 ## Starting Point
 
 This v0.1 framework starts small. It does not try to solve every cross-ecosystem trust registry problem. It defines the minimum pattern for onboarding a verifier, keeping that verifier in good standing, and letting a wallet check whether the verifier is allowed to make a specific presentation request.
