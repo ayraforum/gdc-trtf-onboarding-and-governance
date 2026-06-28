@@ -1,16 +1,16 @@
 # Government-Issued Identity RP Profile Draft
 
-Status: Strawman operational profile for discussion
+Status: Supporting strawman operational profile for downstream verifier-access discussion
 
-Parent discussion: [Track 3 RP Onboarding and Governance Framework v0.1](track3-rp-onboarding-and-governance-v0.1.md)
+Parent discussion: [Track 3 Issuer Onboarding & Governance Framework v0.1](../track3-issuer-onboarding-and-governance-v0.1.md)
 
 ## How to Read This Profile
 
-This profile is a draft example of how the Track 3 framework could be applied to relying parties and verifiers that want to consume government-issued identity credentials. It is not a GDC decision, not a consensus document, and not an Ayra governance framework.
+This profile is a draft example of downstream relying-party and verifier access questions that arise once issuer trust is available. It is not the main Track 3 deliverable, not a GDC decision, not a consensus document, and not an Ayra governance framework.
 
-The purpose is to make the Track 3 conversation concrete. The profile turns abstract questions into operational choices: who applies, what evidence is required, who approves, what appears in the registry, what the wallet checks, and what happens when a check fails.
+The purpose is to preserve the useful RP/verifier thinking from the earlier framing. The profile turns downstream access questions into operational choices: who applies, what evidence is required, who approves, what appears in the registry, what the wallet checks, and what happens when a check fails.
 
-This profile should be treated as discussion material. It should be simplified, corrected, and narrowed before any publication or adoption.
+This profile should be treated as supporting discussion material. It should be simplified, corrected, and narrowed before any publication or adoption.
 
 ## 1. Purpose
 
@@ -30,9 +30,9 @@ In scope:
 - Wallet-side checks that determine whether the verifier is authorized for the request being made.
 - Presentation-level authorization, including purpose, credential type, requested attributes, jurisdiction, and operating context.
 
-Out of scope:
+Out of scope for this supporting profile:
 
-- Issuer authorization, issuer onboarding, or identity-provider governance.
+- Issuer authorization, issuer onboarding, or identity-provider governance, except as defined by the parent issuer-onboarding framework.
 - Full trust-framework design for every government identity ecosystem.
 - Cross-border registry-of-registries governance.
 - Technical wire-format selection.

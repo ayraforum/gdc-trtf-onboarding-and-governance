@@ -20,14 +20,14 @@ Co-led by **France (ANTS, Ministry of the Interior)** and **Apple**.
 |-------|--------------------------------------|-------------------------------------|-----------|
 | **Track 1: Policy, Taxonomy & Scope** | "Shared Vocabulary"; **Requirements & Scope Document**; trust registry policy elements | Common Terminology Glossary; Requirements & Scope draft (v0.1) | DB & Jason/Apple; Philippe & Anthony/France; **Steve Capell/UN-CEFACT**; Gabriel Marquié/IATA; Michael/DSIT |
 | **Track 2: Architecture & Technical Specs** | Architecture framework; specs for ecosystem components (wallets, registries); standards mapping; gap analysis | Architecture & Governance Spec (v0.1) | DB & Jason/Apple; Philippe & Anthony/France; **OpenID Foundation** |
-| **Track 3: RP Onboarding & Governance** | Principles for how third parties (banks, airlines, etc.) access and verify credentials; privacy & security models | RP Onboarding Framework (v0.1) | DB & Jason/Apple; Philippe & Anthony/France; **Darrell O'Donnell/Ayra**; Gabriel Marquié/IATA |
+| **Track 3: Issuer Onboarding & Governance** | Defines principles for issuer onboarding and governance through recognized trust registries, including issuer authority, credential scope, status, conformance evidence, and privacy/security models that support jurisdictional accountability and cross-ecosystem reliance | Issuer Onboarding Framework (v0.1) | DB & Jason/Apple; Philippe & Anthony/France; **Darrell O'Donnell/Ayra**; Gabriel Marquié/IATA |
 | **Track 4: Geneva Conference Execution** | Organize the 20-min leadership panel + two 50-min technical/governance deep-dive breakouts | Session content & speaker coordination | DB & Jason/Apple; Philippe, Morgan, Florine/France |
 
 *Day 1 leadership panel (coordinated with co-leads France & Apple): "Building global trust in digital identity: the role of interoperable trust registries."*
 
 ## Ayra's position
 
-**Darrell O'Donnell volunteered as a champion for Track 3: RP Onboarding & Governance** (email to Secretariat, June 10). This is the track about **how relying parties access and verify credentials, and the privacy/security/governance models around that** — directly adjacent to Ayra's registry-of-registries and conformance work. See [[SYNTHESIS#Ayra's lane in the task force]].
+**Darrell O'Donnell volunteered as a champion for Track 3: Issuer Onboarding & Governance** (email to Secretariat, June 10). This is the track about **how credential issuers are recognized, governed, and checked through trust registries, and the privacy/security/governance models around that**. It remains directly adjacent to relying-party and wallet-side verification, because verifiers and wallets need a way to know whether a credential came from an authorized issuer.
 
 ## Governance / cadence
 - Champions report progress at **bi-weekly general meetings** and drive their sub-group's **weekly sprints**.

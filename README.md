@@ -1,15 +1,17 @@
-# GDC Trust Registry Task Force: Track 3 Onboarding and Governance
+# GDC Trust Registry Task Force: Track 3 Issuer Onboarding & Governance
 
-This repository contains working material for Track 3 of the Global Digital Collaboration Trust Registry Task Force: relying party onboarding and governance.
+This repository contains working material for Track 3 of the Global Digital Collaboration Trust Registry Task Force: Issuer Onboarding & Governance. The current v0.1 draft focuses on issuer trust registries: how issuer authority is represented, scoped, discovered, and relied upon without confusing registry participation with the source of that authority.
 
-The main draft starts with the smallest useful scope:
+## Document Inventory
 
-- [Track 3 RP Onboarding and Governance Framework v0.1](track3-rp-onboarding-and-governance-v0.1.md)
-- [Government-Issued Identity RP Profile Draft](government-issued-identity-rp-profile-draft.md)
-- [Considerations for Later Phases](considerations-for-later-phases.md)
+- [Start Here: Issuer Trust Registries](start-here-issuer-trust-registries.md) - new here? a two-page plain-language introduction with a worked example, and the short set of decisions still to make together
+- [Track 3 Issuer Onboarding & Governance Framework v0.1](track3-issuer-onboarding-and-governance-v0.1.md)
+- [Later Phases](later-phases/README.md) - broader issues deliberately kept out of the initial framework, including verifier, relying-party, reader, and wallet governance questions. These notes are deliberately rougher than the main framework and have not been fully analyzed.
 
-The purpose of the v0.1 framework is to define a clear, repeatable path for relying parties and verifiers that want to consume government-issued identity credentials: how a verifier gets into the trust registry, what it must do to remain there, how wallets know to check the registry, how wallets perform that check, and which presentation requests are authorized for that verifier.
+The purpose of the v0.1 framework is to provide a starting point for how issuer authority is represented, scoped, discovered, and relied upon through trust registries: how issuer-controlled identifiers, keys, endpoints, metadata, and status services are recorded or exposed, how issuer information stays current, how verifiers and wallets know which registry or authority source to check, how they perform that issuer check, and which credential types, claims, schemas, assurance levels, and jurisdictions are in scope for that issuer.
 
-The considerations file preserves the larger governance, cross-ecosystem, and future-phase material without overloading the first deliverable. Both files are intended for broad GDC community discussion and are written to stand on their own for readers outside any internal planning context.
+The considerations file preserves the larger governance, cross-ecosystem, and future-phase material without overloading the first deliverable. These files are intended for broad GDC community discussion and are written to stand on their own for readers outside any internal planning context.
 
-Supporting material consulted while preparing the draft is gathered in [references-and-inputs](references-and-inputs/README.md), including group-shared resources, original attachments, and Ayra-context synthesis notes.
+## Source and Reference Notes
+
+The working drafts were prepared from GDC Trust Registry Task Force discussion material, group-shared resources, original attachments, and related trust-registry governance analysis. Supporting material consulted while preparing the drafts is gathered in [references-and-inputs](references-and-inputs/README.md).
