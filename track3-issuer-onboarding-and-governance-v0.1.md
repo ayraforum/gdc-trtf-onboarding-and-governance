@@ -93,4 +93,4 @@ This is the small set of questions the v0.1 paper exists to work through togethe
 
 This v0.1 paper stays small on purpose. Detailed evidence lists, candidate status values, failure behavior, discovery inputs, claim-scope examples, data-model notes, and the longer open-question list live in [Issuer Trust Registry Operational Detail](later-phases/issuer-trust-registry-operational-detail.md).
 
-None of that is discarded — it's just not where the collaboration starts.
+
