@@ -1,0 +1,20 @@
+@startuml 01-drivers-license
+!include <C4/C4_Context>
+
+title Concrete Example: Mobile Driver's License (mDL)\nAuthority option: participate in a shared registry service
+
+Person(holder, "Driver", "Holds the mDL in a wallet")
+Person(rp, "Relying Party", "Age-restricted retailer, law enforcement, car rental — makes its own trust decision")
+
+System(issuer, "Driver's Licensing Authority", "Provincial / state issuing authority (e.g., a DMV). Signs and issues the mDL")
+System(registry, "AAMVA Digital Trust Service", "Shared registry service operated on behalf of North American mDL issuers — provides the plumbing; the authority remains the authority")
+System_Ext(authority, "Provincial / State Law", "Motor vehicle legislation — the mandate to license drivers already exists")
+
+Rel(authority, issuer, "Grants mandate to license drivers")
+Rel(issuer, registry, "Supplies keys and issuing information", "onboarding is a service arrangement — recorded, not approved")
+Rel(issuer, holder, "Issues signed mDL")
+Rel(holder, rp, "Presents mDL (selective disclosure, e.g., proof of age)")
+Rel(rp, registry, "Q1: Is this DMV authoritative for driver's licenses in this jurisdiction, right now?")
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,22 @@
+@startuml 00-trust-pattern
+!include <C4/C4_Context>
+
+title The Trust Pattern (generic) — every use case repeats this shape
+
+Person(holder, "Holder", "Carries the credential (wallet, web, or hardware)")
+Person(rp, "Relying Party", "Step 3: makes the trust decision itself — the registry informs it, never makes it")
+
+System(issuer, "Issuer", "Step 1: signs and issues the verifiable digital credential")
+System(registry, "Trust Registry", "Step 2: the anchor — governed, discoverable source of issuer recognition")
+System(peer, "Another Trust Registry", "Trustworthy source for questions outside the first registry's scope")
+System_Ext(authority, "Authority", "Mandate exists in law, regulation, or delegation — never created by a registry")
+
+Rel(authority, issuer, "Grants mandate to issue", "legislation / regulation / delegation")
+Rel(authority, registry, "Recognized in / anchors", "operates it, designates a shared service, or points to its basis of authority")
+Rel(issuer, holder, "Issues signed credential")
+Rel(holder, rp, "Presents credential")
+Rel(rp, registry, "Q1: Is this issuer authoritative for this kind of credential?", "type, jurisdiction, currency")
+Rel(registry, peer, "Q2: recognizes other registries", "enables traversal — the web of registries")
+
+SHOW_LEGEND()
+@enduml

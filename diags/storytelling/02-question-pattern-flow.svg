@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">How trust information gets used</title>
+  <desc id="desc">An authority exposes trust information through a trust registry. A verifier starts with a credential, checks the issuer authority and registry answer, then makes the trust decision.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#39485c"/>
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#223044" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 44px Arial, Helvetica, sans-serif; fill: #182333; }
+      .subtitle { font: 400 22px Arial, Helvetica, sans-serif; fill: #526071; }
+      .card { fill: #ffffff; stroke: #d7dfeb; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .card-green { fill: #edf8f1; stroke: #9bc7ad; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .card-yellow { fill: #fff6db; stroke: #e2bc56; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .card-blue { fill: #edf4ff; stroke: #9dbdea; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .card-dark { fill: #25344f; stroke: #25344f; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .num { font: 700 18px Arial, Helvetica, sans-serif; fill: #64748b; }
+      .num-dark { font: 700 18px Arial, Helvetica, sans-serif; fill: #dce7ff; }
+      .head { font: 700 25px Arial, Helvetica, sans-serif; fill: #182333; }
+      .head-dark { font: 700 25px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .body { font: 400 17px Arial, Helvetica, sans-serif; fill: #435166; }
+      .body-dark { font: 400 17px Arial, Helvetica, sans-serif; fill: #dce7ff; }
+      .side-title { font: 700 22px Arial, Helvetica, sans-serif; fill: #182333; }
+      .side-body { font: 400 17px Arial, Helvetica, sans-serif; fill: #526071; }
+      .line { stroke: #39485c; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .thin { stroke: #9aa8bb; stroke-width: 2; fill: none; stroke-dasharray: 8 8; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+
+  <text class="title" x="80" y="78">How trust information gets used</text>
+  <text class="subtitle" x="80" y="116">An authority exposes what can be checked. A verifier uses that information to make the trust decision.</text>
+
+  <rect class="card" x="80" y="220" width="188" height="220"/>
+  <text class="num" x="110" y="260">1</text>
+  <text class="head" x="110" y="300">Credential</text>
+  <text class="body" x="110" y="338">What kind of</text>
+  <text class="body" x="110" y="362">credential is this?</text>
+  <text class="body" x="110" y="398">Which claims are</text>
+  <text class="body" x="110" y="422">being relied on?</text>
+
+  <rect class="card" x="312" y="220" width="188" height="220"/>
+  <text class="num" x="342" y="260">2</text>
+  <text class="head" x="342" y="300">Issuer</text>
+  <text class="body" x="342" y="338">Who signed it?</text>
+  <text class="body" x="342" y="374">Which keys, IDs,</text>
+  <text class="body" x="342" y="398">or endpoints are</text>
+  <text class="body" x="342" y="422">bound to them?</text>
+
+  <rect class="card-green" x="544" y="220" width="220" height="220"/>
+  <text class="num" x="574" y="260">3</text>
+  <text class="head" x="574" y="300">Authority</text>
+  <text class="head" x="574" y="330">basis</text>
+  <text class="body" x="574" y="368">What authority</text>
+  <text class="body" x="574" y="392">source stands</text>
+  <text class="body" x="574" y="416">behind it?</text>
+
+  <rect class="card-yellow" x="808" y="220" width="220" height="220"/>
+  <text class="num" x="838" y="260">4</text>
+  <text class="head" x="838" y="300">Trust</text>
+  <text class="head" x="838" y="330">registry</text>
+  <text class="body" x="838" y="368">Where is this</text>
+  <text class="body" x="838" y="392">information exposed?</text>
+  <text class="body" x="838" y="422">Which registry?</text>
+
+  <rect class="card-blue" x="1072" y="220" width="220" height="220"/>
+  <text class="num" x="1102" y="260">5</text>
+  <text class="head" x="1102" y="300">Registry</text>
+  <text class="head" x="1102" y="330">answer</text>
+  <text class="body" x="1102" y="368">Recognized?</text>
+  <text class="body" x="1102" y="392">In scope?</text>
+  <text class="body" x="1102" y="416">Current?</text>
+
+  <rect class="card-dark" x="1336" y="220" width="184" height="220"/>
+  <text class="num-dark" x="1366" y="260">6</text>
+  <text class="head-dark" x="1366" y="300">Trust</text>
+  <text class="head-dark" x="1366" y="330">decision</text>
+  <text class="body-dark" x="1366" y="372">The verifier</text>
+  <text class="body-dark" x="1366" y="396">or relying party</text>
+  <text class="body-dark" x="1366" y="420">makes the call.</text>
+
+  <path class="line" d="M 268 330 L 312 330"/>
+  <path class="line" d="M 500 330 L 544 330"/>
+  <path class="line" d="M 764 330 L 808 330"/>
+  <path class="line" d="M 1028 330 L 1072 330"/>
+  <path class="line" d="M 1292 330 L 1336 330"/>
+
+  <rect class="card-green" x="166" y="560" width="560" height="220"/>
+  <text class="side-title" x="206" y="608">Authority side: expose trust information</text>
+  <text class="side-body" x="206" y="648">Show who is authoritative, for what credential or claim,</text>
+  <text class="side-body" x="206" y="674">under what basis of authority, and where it can be checked.</text>
+  <text class="side-body" x="206" y="714">That can mean operating a registry, using a shared service,</text>
+  <text class="side-body" x="206" y="740">or pointing to the legislation, regulation, or delegation behind it.</text>
+
+  <rect class="card-blue" x="874" y="560" width="560" height="220"/>
+  <text class="side-title" x="914" y="608">Verifier side: make the trust decision</text>
+  <text class="side-body" x="914" y="648">Use the registry answer as information: recognition, scope,</text>
+  <text class="side-body" x="914" y="674">technical binding, freshness, and registry relationships.</text>
+  <text class="side-body" x="914" y="714">The registry can inform the decision, but it does not accept</text>
+  <text class="side-body" x="914" y="740">or reject the credential on the verifier's behalf.</text>
+
+  <path class="thin" d="M 446 560 C 500 510, 580 470, 654 440"/>
+  <path class="thin" d="M 1154 560 C 1140 508, 1160 472, 1182 440"/>
+</svg>

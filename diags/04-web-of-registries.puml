@@ -1,0 +1,24 @@
+@startuml 04-web-of-registries
+!include <C4/C4_Context>
+
+title The Web of Registries — traversal from any credential to an authority you trust\nA graph, not a hierarchy
+
+Person(rp, "Relying Party", "Starts from the credential in front of it and traverses until it reaches an authority it trusts")
+
+System(cred, "Credential", "Signed by an issuer; signals which trust registry it is anchored to")
+System(issuer, "Issuer", "Anchored in Registry A")
+System(regA, "Trust Registry A", "Recognizes the issuer — but the relying party has no prior relationship with A")
+System(regB, "Trust Registry B", "Recognized by A; also peers laterally with C")
+System(regC, "Trust Registry C", "A registry the relying party already relies on")
+System_Ext(authority, "Trusted Authority", "An anchor the relying party accepts — reached by traversal, not by a master list")
+
+Rel(rp, cred, "1. Reads anchor signal")
+Rel(cred, issuer, "2. Signed by")
+Rel(issuer, regA, "3. Anchored in (Q1)")
+Rel(regA, regB, "4. Recognized by (Q2)")
+BiRel(regB, regC, "Lateral peering (Q2)", "not all trust flows from a single root")
+Rel(regC, authority, "5. Anchored in an authority the relying party trusts")
+Rel(rp, regC, "Already relies on")
+
+SHOW_LEGEND()
+@enduml

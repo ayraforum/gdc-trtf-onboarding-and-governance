@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="850" viewBox="0 0 2000 850" role="img" aria-labelledby="title desc">
+  <title id="title">The trust pattern in plain language</title>
+  <desc id="desc">A plain language version of the generic trust pattern. An authority stands behind an issuer, the issuer signs a credential, a person presents it, a verifier checks a trust registry, and the verifier makes the trust decision.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#354052"/>
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#223044" flood-opacity="0.13"/>
+    </filter>
+    <style>
+      .bg { fill: #ffffff; }
+      .title { font: 700 44px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .subtitle { font: 400 22px Arial, Helvetica, sans-serif; fill: #526071; }
+      .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .authority { fill: #eaf6ef; stroke: #9cc8ad; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .registry { fill: #fff6dc; stroke: #e5bd5a; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .verifier { fill: #edf4ff; stroke: #9bbcea; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .decision { fill: #25344f; stroke: #25344f; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .kicker { font: 700 15px Arial, Helvetica, sans-serif; fill: #68758a; }
+      .head { font: 700 26px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .body { font: 400 17px Arial, Helvetica, sans-serif; fill: #435166; }
+      .dark-head { font: 700 26px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .dark-body { font: 400 17px Arial, Helvetica, sans-serif; fill: #dce7ff; }
+      .line { stroke: #354052; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .soft-line { stroke: #6b7890; stroke-width: 3; stroke-dasharray: 9 9; fill: none; marker-end: url(#arrow); }
+      .label { font: 700 16px Arial, Helvetica, sans-serif; fill: #526071; }
+      .small-label { font: 400 15px Arial, Helvetica, sans-serif; fill: #526071; }
+      .dark-kicker { font: 700 15px Arial, Helvetica, sans-serif; fill: #dce7ff; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="2000" height="850"/>
+
+  <text class="title" x="80" y="78">The trust pattern, without the wiring diagram</text>
+  <text class="subtitle" x="80" y="116">Authority is exposed, credentials are checked, and the verifier still makes the trust decision.</text>
+
+  <rect class="authority" x="80" y="210" width="280" height="230"/>
+  <text class="kicker" x="112" y="252">1. AUTHORITY</text>
+  <text class="head" x="112" y="292">What stands</text>
+  <text class="head" x="112" y="324">behind the issuer?</text>
+  <text class="body" x="112" y="362">Law, regulation, delegation,</text>
+  <text class="body" x="112" y="386">or another source gives</text>
+  <text class="body" x="112" y="410">the issuer its mandate.</text>
+
+  <rect class="card" x="460" y="210" width="280" height="230"/>
+  <text class="kicker" x="492" y="252">2. ISSUER</text>
+  <text class="head" x="492" y="292">Signs the</text>
+  <text class="head" x="492" y="324">credential</text>
+  <text class="body" x="492" y="362">The issuer creates a</text>
+  <text class="body" x="492" y="386">credential and signs it</text>
+  <text class="body" x="492" y="410">with its own signals.</text>
+
+  <rect class="card" x="840" y="210" width="280" height="230"/>
+  <text class="kicker" x="872" y="252">3. PERSON</text>
+  <text class="head" x="872" y="292">Presents the</text>
+  <text class="head" x="872" y="324">credential</text>
+  <text class="body" x="872" y="362">The credential is carried</text>
+  <text class="body" x="872" y="386">in a wallet, document,</text>
+  <text class="body" x="872" y="410">or other channel.</text>
+
+  <rect class="verifier" x="1220" y="210" width="280" height="230"/>
+  <text class="kicker" x="1252" y="252">4. VERIFIER</text>
+  <text class="head" x="1252" y="292">Needs enough</text>
+  <text class="head" x="1252" y="324">context to decide</text>
+  <text class="body" x="1252" y="362">Before relying on it,</text>
+  <text class="body" x="1252" y="386">the verifier checks</text>
+  <text class="body" x="1252" y="410">the trust information.</text>
+
+  <rect class="decision" x="1600" y="210" width="280" height="230"/>
+  <text class="dark-kicker" x="1632" y="252">5. DECIDE</text>
+  <text class="dark-head" x="1632" y="292">Trust</text>
+  <text class="dark-head" x="1632" y="324">decision</text>
+  <text class="dark-body" x="1632" y="362">Registry informs.</text>
+  <text class="dark-body" x="1632" y="386">Verifier decides.</text>
+
+  <path class="line" d="M 360 315 L 460 315"/>
+  <path class="line" d="M 740 315 L 840 315"/>
+  <path class="line" d="M 1120 315 L 1220 315"/>
+  <path class="line" d="M 1500 315 L 1600 315"/>
+
+  <rect class="registry" x="460" y="540" width="660" height="220"/>
+  <text class="kicker" x="500" y="584">TRUST REGISTRY</text>
+  <text class="head" x="500" y="624">A place to find the answer</text>
+  <text class="body" x="500" y="664">Is this issuer recognized for this kind of credential?</text>
+  <text class="body" x="500" y="690">Is the credential or claim in scope?</text>
+  <text class="body" x="500" y="716">Are the issuer signals current and traceable?</text>
+
+  <rect class="registry" x="1220" y="540" width="460" height="220"/>
+  <text class="kicker" x="1260" y="584">OTHER REGISTRIES</text>
+  <text class="head" x="1260" y="624">Follow the path</text>
+  <text class="body" x="1260" y="664">If the answer lives elsewhere,</text>
+  <text class="body" x="1260" y="690">registries can point to other</text>
+  <text class="body" x="1260" y="716">registries the verifier may trust.</text>
+
+  <path class="soft-line" d="M 220 440 C 300 510, 380 580, 460 620"/>
+
+  <path class="soft-line" d="M 600 440 C 625 492, 695 520, 760 540"/>
+
+  <path class="soft-line" d="M 1360 440 C 1300 500, 1225 525, 1120 540"/>
+
+  <path class="line" d="M 1120 650 C 1160 650, 1180 650, 1220 650"/>
+</svg>

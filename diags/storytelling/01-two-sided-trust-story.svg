@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Two-sided trust registry story</title>
+  <desc id="desc">An authority exposes issuer and authority information through a trust registry. A verifier asks the registry for answers, but keeps the trust decision.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#354052"/>
+    </marker>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#223044" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg { fill: #fbfaf6; }
+      .title { font: 700 44px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .subtitle { font: 400 22px Arial, Helvetica, sans-serif; fill: #526071; }
+      .panel-title { font: 700 28px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .panel-kicker { font: 700 15px Arial, Helvetica, sans-serif; fill: #68758a; text-transform: uppercase; }
+      .body { font: 400 19px Arial, Helvetica, sans-serif; fill: #344054; }
+      .small { font: 400 16px Arial, Helvetica, sans-serif; fill: #526071; }
+      .label { font: 700 17px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .white-card { fill: #ffffff; stroke: #d8dee8; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .authority-panel { fill: #eaf6ef; stroke: #9cc8ad; stroke-width: 2; rx: 8; }
+      .registry-panel { fill: #fff6dc; stroke: #e5bd5a; stroke-width: 2; rx: 8; filter: url(#soft-shadow); }
+      .verifier-panel { fill: #edf4ff; stroke: #9bbcea; stroke-width: 2; rx: 8; }
+      .decision { fill: #25344f; rx: 8; }
+      .decision-text { font: 700 24px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .decision-small { font: 400 17px Arial, Helvetica, sans-serif; fill: #dce7ff; }
+      .line { stroke: #354052; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .soft-line { stroke: #6b7890; stroke-width: 3; stroke-dasharray: 8 8; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+
+  <text class="title" x="80" y="78">Authority exposes. Verifier decides.</text>
+  <text class="subtitle" x="80" y="116">A trust registry carries usable answers across the gap, but it does not make the trust decision.</text>
+
+  <rect class="authority-panel" x="80" y="160" width="440" height="610"/>
+  <text class="panel-kicker" x="116" y="210">Authority side</text>
+  <text class="panel-title" x="116" y="248">Expose trust information</text>
+  <text class="body" x="116" y="286">The authority already has its mandate.</text>
+  <text class="body" x="116" y="313">The question is how it becomes</text>
+  <text class="body" x="116" y="340">queryable and findable.</text>
+
+  <rect class="white-card" x="116" y="370" width="368" height="106"/>
+  <text class="label" x="142" y="404">Sources of authority</text>
+  <text class="small" x="142" y="434">Legislation, regulation, delegation,</text>
+  <text class="small" x="142" y="456">or another competent source.</text>
+
+  <rect class="white-card" x="116" y="496" width="368" height="106"/>
+  <text class="label" x="142" y="530">Issuer and credential scope</text>
+  <text class="small" x="142" y="560">Who can issue what, for whom,</text>
+  <text class="small" x="142" y="582">in which jurisdiction or context.</text>
+
+  <rect class="white-card" x="116" y="612" width="368" height="138"/>
+  <text class="label" x="142" y="646">Ways to expose it</text>
+  <text class="small" x="142" y="676">Operate a registry, use a shared</text>
+  <text class="small" x="142" y="698">service, or point to the authority</text>
+  <text class="small" x="142" y="720">basis directly.</text>
+
+  <rect class="registry-panel" x="590" y="246" width="420" height="428"/>
+  <text class="panel-kicker" x="632" y="296">Trust registry</text>
+  <text class="panel-title" x="632" y="334">A findable answer</text>
+  <text class="body" x="632" y="378">Not a new authority.</text>
+  <text class="body" x="632" y="406">Not the decision maker.</text>
+
+  <rect class="white-card" x="632" y="446" width="336" height="174"/>
+  <text class="label" x="660" y="480">What it can answer</text>
+  <text class="small" x="660" y="510">Is this issuer recognized?</text>
+  <text class="small" x="660" y="536">Is this credential in scope?</text>
+  <text class="small" x="660" y="562">Are the signals current?</text>
+  <text class="small" x="660" y="588">Which registry should I check?</text>
+
+  <rect class="verifier-panel" x="1080" y="160" width="440" height="610"/>
+  <text class="panel-kicker" x="1116" y="210">Verifier side</text>
+  <text class="panel-title" x="1116" y="248">Use trust information</text>
+  <text class="body" x="1116" y="286">The verifier starts with a credential</text>
+  <text class="body" x="1116" y="313">and needs enough context to decide.</text>
+
+  <rect class="white-card" x="1116" y="350" width="368" height="112"/>
+  <text class="label" x="1142" y="384">Credential in front of me</text>
+  <text class="small" x="1142" y="414">What type is it? Which claims matter?</text>
+  <text class="small" x="1142" y="436">Which issuer signed it?</text>
+
+  <rect class="white-card" x="1116" y="482" width="368" height="112"/>
+  <text class="label" x="1142" y="516">Registry lookup</text>
+  <text class="small" x="1142" y="546">Ask for recognition, scope, binding,</text>
+  <text class="small" x="1142" y="568">freshness, and registry relationships.</text>
+
+  <rect class="decision" x="1116" y="626" width="368" height="118"/>
+  <text class="decision-text" x="1142" y="666">The trust decision</text>
+  <text class="decision-small" x="1142" y="696">The registry informs it.</text>
+  <text class="decision-small" x="1142" y="720">The verifier or relying party makes it.</text>
+
+  <path class="line" d="M 484 423 C 536 423, 552 423, 590 423"/>
+
+  <path class="soft-line" d="M 1116 538 C 1064 538, 1046 538, 1010 538"/>
+  <text class="small" x="1038" y="515">asks</text>
+
+  <path class="line" d="M 1010 574 C 1062 574, 1080 574, 1116 574"/>
+  <text class="small" x="1040" y="608">answers</text>
+
+</svg>

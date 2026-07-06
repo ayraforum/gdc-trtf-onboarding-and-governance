@@ -2,11 +2,11 @@
 
 Status: Supporting strawman operational profile for downstream verifier-access discussion
 
-Parent discussion: [Track 3 Issuer Onboarding & Governance Framework v0.1](../track3-issuer-onboarding-and-governance-v0.1.md)
+Parent discussion: [Issuer Onboarding & Governance Framework v0.1](https://github.com/ayraforum/gdc-trust-registries-tf/blob/main/issuer-onboarding-and-governance-v0.1.md)
 
 ## How to Read This Profile
 
-This profile is a draft example of downstream relying-party and verifier access questions that arise once issuer trust is available. It is not the main Track 3 deliverable, not a GDC decision, not a consensus document, and not an Ayra governance framework.
+This profile is a draft example of downstream relying-party and verifier access questions that arise once issuer trust is available. It is not the main Track 1 deliverable, not a GDC decision, not a consensus document, and not an Ayra governance framework.
 
 The purpose is to preserve the useful RP/verifier thinking from the earlier framing. The profile turns downstream access questions into operational choices: who applies, what evidence is required, who approves, what appears in the registry, what the wallet checks, and what happens when a check fails.
 
@@ -36,7 +36,7 @@ Out of scope for this supporting profile:
 - Full trust-framework design for every government identity ecosystem.
 - Cross-border registry-of-registries governance.
 - Technical wire-format selection.
-- Certification of wallets, unless the Track 3 group decides wallet authorization belongs in scope.
+- Certification of wallets, unless the working group decides wallet authorization belongs in scope.
 - Non-government or fully commercial credential ecosystems.
 
 ## 3. Design Posture
@@ -155,7 +155,7 @@ Before releasing holder data, the wallet should be able to check:
 - Is the authorization fresh enough for the request risk?
 - What should the wallet do if any check fails?
 
-Wallet-side checking is in scope for this profile. Whether wallets themselves must be approved, certified, authorized, or listed remains an open Track 3 scope question.
+Wallet-side checking is in scope for this profile. Whether wallets themselves must be approved, certified, authorized, or listed remains an open scope question.
 
 ## 11. Wallet Failure Behavior
 

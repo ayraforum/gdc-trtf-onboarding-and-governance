@@ -8,7 +8,7 @@ This file holds material that matters for the larger issuer onboarding and gover
 
 ## Broader Question
 
-The larger Track 3 question is: how does a credential issuer get recognized, onboarded, and trusted, how can verifiers and wallets check that the issuer has been verified before relying on a credential or claim, and how does that issuer recognition travel across ecosystems?
+The larger question for this work is: how does a credential issuer get recognized, onboarded, and trusted, how can verifiers and wallets check that the issuer has been verified before relying on a credential or claim, and how does that issuer recognition travel across ecosystems?
 
 The first document handles the local issuer-governance loop. This considerations file holds material for later expansion.
 
@@ -45,7 +45,7 @@ The broader framework is concerned first with issuer trust, and then with downst
 - User trusts verifier: The holder knows the RP is legitimate, understands what is being requested, and can make an informed choice before sharing.
 - Ecosystem trusts reader: The ecosystem can identify the RP or reader and determine whether it is authorized to request the relevant scope.
 
-The Track 3 starting point is now: have we verified the issuer? Before a credential is relied upon, verifiers and wallets should be able to ask whether this issuer is registered, whether its authority evidence has been verified by an authorized registrar, whether it is still in good standing, and whether this exact credential or claim is within the issuer's recognized scope.
+The starting point is now: have we verified the issuer? Before a credential is relied upon, verifiers and wallets should be able to ask whether this issuer is registered, whether its authority evidence has been verified by an authorized registrar, whether it is still in good standing, and whether this exact credential or claim is within the issuer's recognized scope.
 
 Verifier authorization remains important downstream: once issuer trust is established, wallets may still need to ask whether a verifier is authorized to request a particular presentation.
 
@@ -216,7 +216,7 @@ The Legal Entity Identifier (LEI) should be considered as one important organiza
 
 UN/CEFACT's Global Trust Registry work is especially relevant here. The Global Registry Information Directory (GRID) pattern is principally about registries and registrars for business, trade, legal personality, ownership, rights, and public status. It is not a central registry of all organizations. It is a directory of authoritative registrars and registers, designed so participants can determine which registrar is legitimate for a given business or supply-chain context.
 
-For Track 3, the lesson is not that issuer onboarding should become a business-registry project. The lesson is that organization identity and registrar authority are inseparable. If an issuer claims to be a government agency, bank, airline, university, employer, government contractor, licensed professional body, or other organization, the issuer trust registry may need to know which authoritative business, public, or institutional registry supports that claim.
+For this work, the lesson is not that issuer onboarding should become a business-registry project. The lesson is that organization identity and registrar authority are inseparable. If an issuer claims to be a government agency, bank, airline, university, employer, government contractor, licensed professional body, or other organization, the issuer trust registry may need to know which authoritative business, public, or institutional registry supports that claim.
 
 Later-phase questions include:
 
@@ -231,7 +231,7 @@ Later-phase questions include:
 
 ## Downstream RP/Verifier Access
 
-RP/verifier access should be treated as downstream of issuer trust rather than the main Track 3 deliverable.
+RP/verifier access should be treated as downstream of issuer trust rather than the main deliverable.
 
 Later phases may still need to answer:
 

@@ -1,0 +1,22 @@
+@startuml 03-passport
+!include <C4/C4_Context>
+
+title Concrete Example: Passport\nThe working reference model — ICAO PKD, a shared service run on behalf of member states
+
+Person(holder, "Traveler", "Carries the passport (physical chip or digital travel credential)")
+Person(rp, "Airline / Border Control", "Checks the passport before relying on it — makes its own trust decision")
+
+System(issuer, "National Passport Office", "Member-state authority. Signs passports with country signing keys")
+System(registry, "ICAO PKD", "Public Key Directory operated by ICAO on behalf of UN member states — member states supply their keys; ICAO maintains the list")
+System(own, "National Register", "Some states (e.g., the US) maintain their own register instead — peering, not a single root")
+System_Ext(authority, "National Law / ICAO Membership", "The mandate to issue passports already exists in each state's own law")
+
+Rel(authority, issuer, "Grants mandate to issue passports")
+Rel(issuer, registry, "Supplies country signing keys", "the authority stays with the member state; ICAO provides the service")
+Rel(issuer, holder, "Issues signed passport")
+Rel(holder, rp, "Presents passport")
+Rel(rp, registry, "Q1: Do these signing keys belong to the recognized passport authority?")
+Rel(rp, own, "Some relying parties check a national register instead", "no single root is accepted by everyone")
+
+SHOW_LEGEND()
+@enduml

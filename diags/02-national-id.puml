@@ -1,0 +1,24 @@
+@startuml 02-national-id
+!include <C4/C4_Context>
+
+title Concrete Example: National ID Card\nAuthority option: operate its own registry — with registry-to-registry recognition (Q2)
+
+Person(holder, "Citizen", "Holds the national ID credential")
+Person(rp, "Relying Party", "Bank in another member state performing KYC — makes its own trust decision")
+
+System(issuer, "National ID Authority", "Member-state authority. Signs and issues the national ID credential")
+System(registry, "National Trusted List", "Operated by the member state itself — directly accountable for its answers")
+System(lotl, "EU List of Trusted Lists", "Recognizes each member state's trusted list — a registry of registries")
+System_Ext(authority, "National Law + eIDAS", "The mandate to issue national IDs already exists in national law; eIDAS frames cross-border recognition")
+
+Rel(authority, issuer, "Grants mandate to issue national IDs")
+Rel(authority, registry, "Operates under its own law", "the sovereign lights up its own registry")
+Rel(issuer, registry, "Listed with keys and credential scope")
+Rel(issuer, holder, "Issues signed national ID credential")
+Rel(holder, rp, "Presents credential")
+Rel(rp, lotl, "Q2: Which national registries does the EU list recognize?", "traversal starts here")
+Rel(lotl, registry, "Recognizes", "Q2 answered — points to the authoritative national list")
+Rel(rp, registry, "Q1: Is this authority authoritative for national IDs, right now?")
+
+SHOW_LEGEND()
+@enduml

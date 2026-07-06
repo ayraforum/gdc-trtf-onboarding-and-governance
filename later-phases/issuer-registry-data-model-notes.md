@@ -2,7 +2,7 @@
 
 Status: Parked working material. Not part of the v0.1 framework.
 
-This material was moved out of the main [Track 3 Issuer Onboarding & Governance Framework v0.1](../track3-issuer-onboarding-and-governance-v0.1.md) so the v0.1 document stays focused on principles and the operating loop, not on data-model design. It is retained here so the thinking is not lost and can be picked up in a later phase, ideally with whichever technical track owns the machine-readable expression of issuer authorization.
+This material was moved out of the main [Issuer Onboarding & Governance Framework v0.1](https://github.com/ayraforum/gdc-trust-registries-tf/blob/main/issuer-onboarding-and-governance-v0.1.md) so the v0.1 document stays focused on principles and the operating loop, not on data-model design. It is retained here so the thinking is not lost and can be picked up in a later phase, ideally with whichever technical track owns the machine-readable expression of issuer authorization.
 
 Treat everything below as a starting list to discuss and revise, not as a settled schema.
 
@@ -35,4 +35,4 @@ This list can later be mapped into a specific technical format. The first task i
 
 This field list was drafted before the framework drew its line between recognition-and-binding (sovereign and public-authority issuers) and delegated vetting. Several fields assume the vetting case — "registrar or approving authority," "governance rules or policy version used for approval," "appeal or review path for registry decisions" — and read awkwardly, or wrongly, for a sovereign whose authority is declared and self-governed rather than approved.
 
-Before this becomes a schema, the group needs to work through how the data expresses a self-declared, discoverable authority source without implying the registry approved, graded, or can revoke the sovereign's underlying right to issue. This connects directly to the open discussion item in the main document about whether a registry entry should signal recognized versus vetted at all, and if so how, without ranking or second-guessing sovereign issuers. See [Respecting Sovereign Authority](../track3-issuer-onboarding-and-governance-v0.1.md#respecting-sovereign-authority).
+Before this becomes a schema, the group needs to work through how the data expresses a self-declared, discoverable authority source without implying the registry approved, graded, or can revoke the sovereign's underlying right to issue. This connects directly to the open discussion item in the main document about whether a registry entry should signal recognized versus vetted at all, and if so how, without ranking or second-guessing sovereign issuers. See [Sovereignty Boundary](https://github.com/ayraforum/gdc-trust-registries-tf/blob/main/issuer-onboarding-and-governance-v0.1.md#sovereignty-boundary).

@@ -2,7 +2,7 @@
 
 Status: Later-phase working notes moved out of the v0.1 issuer onboarding and governance paper
 
-This note preserves operational detail that may be useful later, but should not carry the first collaboration paper. It is intentionally more granular than the main Track 3 document.
+This note preserves operational detail that may be useful later, but should not carry the first collaboration paper. It is intentionally more granular than the main framework document.
 
 The language in this note follows the corrected trust-registry model: issuers establish and control their identifiers, keys, endpoints, metadata, and status services. A trust registry records, exposes, references, or verifies those relationships depending on the registry model. Where a registrar model applies, the registrar may verify proof of control.
 
