@@ -47,6 +47,7 @@ These are the boundaries the group keeps drifting back across. Naming them stops
 3. **Track 1 will not dictate how sovereigns run their onboarding.** No global minimum standard that tells jurisdictions how to operate internally. The group defines good standards and SOPs *for admission to a trust list*, not for how a government issues.
 4. **Relying-party onboarding is out of scope for this round.**
 5. **Cross-jurisdiction equivalence / bilateral recognition is out of scope.** That is a sovereign-to-sovereign decision (the AAMVA–Austroads VICAL conversation is an example, not a deliverable).
+6. **The registry does not establish issuer truthfulness, and does not decide its own reliance.** "Is this issuer telling the truth?" is not a registry question — it is answered, if at all, by proofing, verification, liability, and consequence elsewhere in the system. And the decision to rely on a given trust registry is made *outside* it, by the relying party choosing which registries to trust and why. The registry supplies inputs to decisions; it makes none — including the decision to trust the registry. A registry answers one bounded question: is this issuer recognized and authorized under published criteria, and is that current. *This is the root that makes standing audit a red herring — the "how do we know the issuer is honest?" pull is answered by leaving it outside the registry, not by building audit into it.*
 
 ## 4. Open questions — resolve or defer
 
