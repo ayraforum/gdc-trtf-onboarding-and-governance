@@ -71,8 +71,26 @@ These are the boundaries the group keeps drifting back across. Naming them stops
 - Confirm the theme: cross-comparison of **issuer** onboarding (France Identité, AAMVA DTS), MDL as the lens, framed around cross-jurisdiction trust
 - Follow up with Mike on speaking — will be in Geneva, bandwidth uncertain
 
-## Terminology locked for this cycle
+## Terminology to ratify this cycle
+
+### The registry's role
 
 - **Carrier** — the registry's role: it conveys issuer information, it does not translate or normalize meaning.
 - **Admission floor** — presence in the registry as an assurance signal in its own right; the qualitative, unquantified baseline an issuer clears by being listed.
 - **Governance made legible** — what the admission floor actually adds: existing (often analog, informal) governance surfaced into a discoverable, consistent, checkable form. The registry surfaces governance; it does not create it.
+
+### The four-way split — disentangling "recognition"
+
+"Recognition" is currently overloaded across three different relationships. Split it, and reserve the word for the cross-ecosystem case only.
+
+- **Listing (admission)** — the operational fact of an issuer being in a registry with current status (active, suspended, revoked, expired). The signal weight of being listed at all is the *admission floor*.
+- **Authority** — the underlying power behind an issuer. The registry **records and surfaces** it; it never grants it. Three flavors, genuinely different:
+  - *Inherent* (sovereign): rests on law — "recorded, not approved."
+  - *Delegated*: an authority delegates to a sub-issuer — established by **vetting**.
+  - *Mutual / federated*: peers agree to a common bar and the body asserts the shared authority on their behalf. **AAMVA ↔ its states/provinces/territories** — an asserted, mutually-agreed authority, recorded. Not recognition, not mere vetting.
+- **Recognition** — reserved for **one ecosystem accepting another's authority across a boundary, for a defined scope**. Scoped and often reciprocal. Example: `recognition: AAMVA → AustRoads, authoritative-for (issue, driverlicense.au.*, driverlicense.nz.*)`. This is the registry-of-registries / cross-ecosystem sense — the piece that makes the web of registries scale.
+- **Certification** — reserved for external, standards-based backing attestations (ISO 27001, SOC 2, ISO 18013 conformance) an entity presents as evidence. Referenced by the registry, not the registry's own act.
+
+The line that keeps flavor 3 and recognition distinct: **federation *forms* an ecosystem from its members; recognition *bridges* two ecosystems that already exist.** AAMVA↔states forms one. AAMVA↔AustRoads bridges two.
+
+*Caveat on external vocabulary:* W3C terminology (including "Recognized Entities") tends to oversimplify and reuses terms loosely — treat it as an input to stay aware of so we don't collide, not a framing to adopt. Confirm directly with Steve Capell whether his "recognition" means the cross-ecosystem sense (aligns) or the admission sense (clashes) before standardizing. Flag to Gabrielle for the taxonomy pass.
