@@ -28,6 +28,7 @@ The [Global Digital Collaboration (GDC)](https://globaldigitalcollaboration.org/
 | [[06-edugain-and-gtr-logical-model]] | eduGAIN OpenID Federation Pilot (deck) | Niels van Dijk (SURF) & Davide Vaghetti (GARR), via Gail Hodges (OIDF) | Real-world federated trust at scale; SAML → OpenID Federation |
 | [[08-un-cefact-global-trust-registry-gtr]] | **UN/CEFACT Global Trust Registry (GTR / GRID)** | UN/CEFACT, via Steve Capell | UN-hosted registry-of-registries — closest external parallel to Ayra |
 | [[07-track3-rp-onboarding-scope-gdc2026]] | **Track 3 scope for GDC 2026 (Geneva)** | Ayra (internal) | What we deliver in Geneva, what's out of scope, IATA/DTC example |
+| [[09-steve-capell-does-this-already-solve-it]] | **"Don't these already solve the problem?"** — review of Framework v0.1 | Steve Capell (UN/CEFACT) | W3C Recognized Entities + UN GRID as trust root — reframed as *options, not the answer; GRID is a root, never the root* |
 | [[SYNTHESIS]] | **Ayra synthesis: value-add, divergences, summary** | Ayra (internal) | Read this for the "so what" |
 
 ## Source thread
