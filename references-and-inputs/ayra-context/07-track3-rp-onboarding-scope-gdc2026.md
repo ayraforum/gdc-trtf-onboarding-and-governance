@@ -1,15 +1,21 @@
 ---
-title: "Track 3 — RP / Verifier Onboarding: Scope for GDC 2026 (Geneva)"
+title: "RP / Verifier Onboarding: Scope for GDC 2026 (Geneva) [ARCHIVED]"
 type: analysis
 audience: internal (Ayra)
 champion: Darrell O'Donnell (Ayra)
 event: GDC 2026, Geneva, September 2026
 source_url: https://docs.google.com/document/d/18vwwzdyAo0PL7YBRW37zQiFz2oGmZh8ZBbHgczVIAr8/edit?tab=t.0
 captured: 2026-06-15
-tags: [gdc, trust-registries, track3, rp-onboarding, scope, ayra-strategy, iata, dtc]
+status: superseded
+superseded_by: track1-simplifications-and-scope-v0.1.md
+tags: [gdc, trust-registries, superseded, rp-onboarding, scope, ayra-strategy, iata, dtc]
 ---
 
-# Track 3 — RP / Verifier Onboarding: Scope for GDC 2026 (Geneva)
+# RP / Verifier Onboarding: Scope for GDC 2026 (Geneva) [ARCHIVED]
+
+**Archived — the June 2026 framing. Do not work from this scope.** The Geneva deliverable is now the bare minimum for an **issuer** registry for government-issued identity documents; RP/verifier onboarding is out of scope. Current scope: [track1-simplifications-and-scope-v0.1.md](../../track1-simplifications-and-scope-v0.1.md). All of this work now sits in Track 1, which Darrell co-leads with Apple and France. Filename kept so existing links resolve.
+
+Still useful here: the IATA/DTC example and the scope-discipline method — though the IATA polarity has inverted, since their registry-onboarding question is now the in-scope one.
 
 > Working scope note for the track Darrell is championing. Source: the [Track 3 effort doc](https://docs.google.com/document/d/18vwwzdyAo0PL7YBRW37zQiFz2oGmZh8ZBbHgczVIAr8/edit?tab=t.0) (same TR-TF strategy doc captured in [[05-gdc-trtf-work-tracks-and-champions]]). This note states what we are actually delivering in Geneva, what we are deliberately holding out, and how Ayra/Darrell lead the room toward the bigger prize.
 

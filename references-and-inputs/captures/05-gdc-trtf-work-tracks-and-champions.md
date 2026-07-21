@@ -14,7 +14,10 @@ tags: [external, gdc, trust-registries, governance, work-plan]
 
 Co-led by **France (ANTS, Ministry of the Interior)** and **Apple**.
 
-## The four work tracks
+> [!warning] Structure superseded — retained as prior art
+> The four-track table below is the record **as the Secretariat published it in June 2026**. It no longer describes the task force. **Track 3 (Issuer Onboarding & Governance) was folded into Track 1; there is no Track 3.** The task force now runs two working tracks: **Track 1 — Policy, Taxonomy & Scope; Onboarding & Governance** (Darrell O'Donnell is a co-lead, with Apple and France) and **Track 2 — Architecture & Technical**. Do not cite the table below as the current structure.
+
+## The four work tracks (as captured, June 2026)
 
 | Track | Core responsibilities & "hot issues" | Immediate deliverables (for Geneva) | Champions |
 |-------|--------------------------------------|-------------------------------------|-----------|
@@ -25,7 +28,9 @@ Co-led by **France (ANTS, Ministry of the Interior)** and **Apple**.
 
 *Day 1 leadership panel (coordinated with co-leads France & Apple): "Building global trust in digital identity: the role of interoperable trust registries."*
 
-## Ayra's position
+## Ayra's position (as of June 2026)
+
+**Since superseded:** Track 3 was folded into Track 1, and Darrell is now a **co-lead of Track 1** alongside Apple and France. The issuer onboarding and governance work carried over intact — only the track label changed.
 
 **Darrell O'Donnell volunteered as a champion for Track 3: Issuer Onboarding & Governance** (email to Secretariat, June 10). This is the track about **how credential issuers are recognized, governed, and checked through trust registries, and the privacy/security/governance models around that**. It remains directly adjacent to relying-party and wallet-side verification, because verifiers and wallets need a way to know whether a credential came from an authorized issuer.
 

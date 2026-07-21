@@ -1,0 +1,37 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+
+title System Context diagram for Trust Registry and the Trust Registry Query Protocol
+
+Person(Integrator, "Integrator", "Ecosystem Developer")
+
+System(Bridge, "TR Protocol Bridge")
+System(TRAIN, "TRAIN")
+System(OIDF, "OIDF")
+System(EUTrustedList, "EU Trusted List")
+System(W3CRE,"W3C \nRecognized Entity")
+System(VICAL, "ISO 20022 \nVICAL")
+System(NativeSupport, "SystemX"," w Native TRQP Support")
+
+
+
+System(OpenData, "OpenData Bridge")
+
+
+Rel(Integrator, Bridge, "TRQP v2.0")
+Rel(Bridge, TRAIN,"")
+Rel(Bridge, VICAL,"")
+Rel(Bridge, W3CRE,"")
+Rel(Bridge, EUTrustedList, "")
+Rel(Bridge, OIDF, "")
+Rel(Bridge, OpenData,"")
+Rel(TRAIN, EUTrustedList,"native")
+
+Rel(Integrator, NativeSupport,"TRQP v2.0")
+
+
+
+@enduml 
