@@ -2,6 +2,8 @@
 
 This folder gathers the source material consulted while preparing the Track 1 Issuer Onboarding and Governance working draft.
 
+- [Nair's India architecture comparison, September 24, 2026](nair-india-architecture-comparison-2026-09-24.md) — additional internal co-lead preparation against current scope; not a source submitted to or adopted by the task force.
+
 The material is organized into three groups:
 
 - `captures/` contains Markdown captures and summaries of resources shared through the GDC Trust Registries Task Force email thread, especially the thread titled `REMINDER: Trust Registries Meeting Today @ 16:30 CET`, shared through the TR-TF Google Group between June 10 and June 15, 2026.
